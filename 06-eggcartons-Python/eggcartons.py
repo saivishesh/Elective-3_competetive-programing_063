@@ -6,4 +6,13 @@
 
 def fun_eggcartons(eggs):
 	# your code goes here
-	return 1
+ a=12
+ if(eggs==0):
+     return 0
+ elif(1<eggs<=a):
+     return 1
+ elif(12<eggs<=a*2):
+     return 2
+ elif(24<eggs<=a*3):
+     return 3
+ print(fun_eggcartons)
