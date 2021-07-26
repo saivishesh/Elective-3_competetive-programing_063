@@ -41,3 +41,20 @@ def alphaAsia():
 
 # Note: Check for test cases to understand the output format.
 locations = {'North America': {'USA': ['Mountain View']}}
+locations['North America']['USA'].append('Atlanta')
+locations['Asia'] = {'India': ['Bangalore']}
+locations['Asia']['China'] = ['Shanghai']
+
+def sortUSA():
+    '''Return all the cities in the USA in alphabetical order'''
+    usa = sorted(locations['North America']['USA'])
+    return usa
+    
+
+def alphaAsia():
+    '''Return all the cities in Asia continent in alphabetical order'''
+    b = []
+    for cou,city in locations['Asia'].items():
+        c = city[0]+" - "+cou
+        b.append(c)
+    return(b)
